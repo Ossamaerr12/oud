@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عطر روح الأصيل | تجربة فاخرة للروح</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --light-gold: #F5E6B3;
+            --black: #0F0F0F;
+            --dark-gray: #1A1A1A;
+            --beige: #F5F1E8;
+            --light-text: #E5E5E5;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--black);
+            color: var(--light-text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            color: var(--light-gold);
+            letter-spacing: -0.5px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgba(15, 15, 15, 0.95);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Cairo', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--light-gold);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-left: 10px;
+            font-size: 28px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 35px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: var(--beige);
+            text-decoration: none;
+            font-size: 17px;
+            transition: var(--transition);
+            font-weight: 500;
+            padding: 8px 0;
+        }
+
+        nav ul li a:hover {
+            color: var(--light-gold);
+        }
+
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--light-gold);
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .action-icon {
+            color: var(--beige);
+            margin-right: 25px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .action-icon:hover {
+            color: var(--light-gold);
+            transform: translateY(-2px);
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            background-color: var(--gold);
+            color: var(--black);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(15, 15, 15, 0.7), rgba(26, 26, 26, 0.8)), url('https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            padding-top: 100px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: var(--beige);
+            max-width: 600px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold), #E8C547);
+            color: var(--black);
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-family: 'Cairo', sans-serif;
+            font-size: 18px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #E8C547, var(--gold));
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover:before {
+            opacity: 1;
+        }
+
+        .btn span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--light-gold);
+            color: var(--light-gold);
+            margin-left: 20px;
+        }
+
+        .btn-outline:hover {
+            background: var(--light-gold);
+            color: var(--black);
+        }
+
+        /* Floating Elements */
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .floating-element {
+            position: absolute;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 50%;
+            animation: float 15s infinite ease-in-out;
+        }
+
+        .floating-element:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            top: 20%;
+            right: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            bottom: 20%;
+            left: 10%;
+            animation-delay: 3s;
+        }
+
+        .floating-element:nth-child(3) {
+            width: 70px;
+            height: 70px;
+            top: 60%;
+            right: 20%;
+            animation-delay: 6s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        /* Features Section */
+        .features {
+            padding: 120px 0;
+            background-color: var(--dark-gray);
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .section-title p {
+            max-width: 600px;
+            margin: 0 auto;
+            color: var(--beige);
+            font-size: 18px;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(to right, transparent, var(--gold), transparent);
+            margin: 25px auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            background: linear-gradient(145deg, rgba(26, 26, 26, 0.9), rgba(15, 15, 15, 0.9));
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, transparent, var(--gold), transparent);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--gold), #E8C547);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 32px;
+            color: var(--black);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: #ccc;
+            font-size: 16px;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 120px 0;
+            background-color: var(--black);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .product-card {
+            background-color: var(--dark-gray);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .product-image {
+            height: 380px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .product-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, rgba(15, 15, 15, 0.9));
+            display: flex;
+            align-items: flex-end;
+            padding: 30px;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-overlay {
+            opacity: 1;
+        }
+
+        .product-info {
+            padding: 25px;
+        }
+
+        .product-info h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .product-info p {
+            color: #aaa;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .product-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-weight: 700;
+            color: var(--light-gold);
+            font-size: 22px;
+        }
+
+        /* Experience Section */
+        .experience {
+            padding: 120px 0;
+            background: linear-gradient(rgba(15, 15, 15, 0.9), rgba(15, 15, 15, 0.9)), url('https://images.unsplash.com/photo-1595425970375-3a53b40f3e3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .experience-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .experience h2 {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+
+        .experience p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: var(--beige);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 120px 0;
+            background-color: var(--dark-gray);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .testimonial-card {
+            background: linear-gradient(145deg, rgba(26, 26, 26, 0.9), rgba(15, 15, 15, 0.9));
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border-left: 4px solid var(--gold);
+            position: relative;
+        }
+
+        .testimonial-card:before {
+            content: """;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 80px;
+            color: rgba(212, 175, 55, 0.2);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 25px;
+            color: #ddd;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold), #E8C547);
+            margin-left: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--black);
+            font-weight: bold;
+        }
+
+        .author-info h4 {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .author-info p {
+            font-size: 15px;
+            color: #aaa;
+        }
+
+        /* Newsletter */
+        .newsletter {
+            padding: 100px 0;
+            background-color: var(--black);
+            text-align: center;
+        }
+
+        .newsletter h2 {
+            margin-bottom: 20px;
+        }
+
+        .newsletter p {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            color: #ccc;
+            font-size: 18px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+            background: var(--dark-gray);
+            border-radius: 50px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 18px 25px;
+            border: none;
+            background: transparent;
+            color: var(--beige);
+            font-family: 'Tajawal', sans-serif;
+            font-size: 16px;
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+        }
+
+        .newsletter-form button {
+            background: linear-gradient(135deg, var(--gold), #E8C547);
+            color: var(--black);
+            border: none;
+            padding: 0 35px;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .newsletter-form button:hover {
+            background: linear-gradient(135deg, #E8C547, var(--gold));
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-gray);
+            padding: 80px 0 30px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 25px;
+            font-size: 22px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--gold);
+        }
+
+        .footer-column p {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-column ul li a i {
+            margin-left: 10px;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+
+        .footer-column ul li a:hover {
+            color: var(--light-gold);
+            transform: translateX(-5px);
+        }
+
+        .footer-column ul li a:hover i {
+            transform: translateX(3px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: var(--black);
+            border-radius: 50%;
+            color: var(--beige);
+            transition: var(--transition);
+            font-size: 18px;
+        }
+
+        .social-links a:hover {
+            background: linear-gradient(135deg, var(--gold), #E8C547);
+            color: var(--black);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999;
+            font-size: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1100px) {
+            .hero h1 {
+                font-size: 48px;
+            }
+            
+            nav ul {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .btn {
+                padding: 14px 30px;
+                font-size: 16px;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+                border-radius: 20px;
+            }
+            
+            .newsletter-form input {
+                border-radius: 20px 20px 0 0;
+                margin-bottom: 1px;
+            }
+            
+            .newsletter-form button {
+                border-radius: 0 0 20px 20px;
+                padding: 15px;
+            }
+            
+            .section-title h2 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-gem"></i>
+                    روح الأصيل
+                </a>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">مجموعتنا</a></li>
+                        <li><a href="#">قصتنا</a></li>
+                        <li><a href="#">المعرض</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="action-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="action-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="action-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <div class="cart-count">3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>عطر روح الأصيل: رحلة إلى عالم الفخامة</h1>
+                <p>اكتشف تجربة حسيّة فريدة تجمع بين الأصالة والحداثة. عطر "روح الأصيل" يمنحك حضوراً أنيقاً لا ينسى بروائح نادرة تخلّد في الذاكرة.</p>
+                <a href="#" class="btn"><span>اكتشف العطر</span></a>
+                <a href="#" class="btn btn-outline">شاهد المجموعة</a>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>لماذا عطر روح الأصيل؟</h2>
+                <p>نحن نقدم تجربة عطرية فريدة تجمع بين الفن والتراث والحداثة</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>تركيبة حصرية</h3>
+                    <p>مزيج نادر من أفضل الزيوت العطرية والمواد الطبيعية التي تم اختيارها بعناية فائقة.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>ثبات طويل الأمد</h3>
+                    <p>يبقى عطرك معك طوال اليوم برائحة ثابتة تنطلق تدريجياً مع حركة الجسم.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>جودة عالمية</h3>
+                    <p>حاصل على جوائز عالمية في صناعة العطور وتقييمات ممتازة من خبراء العطور.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>مجموعتنا الفاخرة</h2>
+                <p>اكتشف تشكيلتنا الحصرية من العطور التي صممت خصيصاً للأذواق الراقية</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/41C5Fnf64yL._AC_UF1000,1000_QL80_.jpg');">
+                        <div class="product-overlay">
+                            <a href="#" class="btn"><span>اكتشف الآن</span></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>عطر الليالي العربية</h3>
+                        <p>مزيج ساحر من العنبر والعود والمسك مع لمسة من الزهور النادرة.</p>
+                        <div class="product-price">
+                            <span class="price">670 ر.س</span>
+                            <a href="#" class="btn"><span>أضف للسلة</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://alfakhama.ma/cdn/shop/products/raidluxe_800x.jpg?v=1638923979');">
+                        <div class="product-overlay">
+                            <a href="#" class="btn"><span>اكتشف الآن</span></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>عطر رائد لوكس </h3>
+                        <p>أنوثة فاتنة تجمع بين رائحة الورد الدمشقي الأصيل والمسك الفاخر.</p>
+                        <div class="product-price">
+                            <span class="price">580 ر.س</span>
+                            <a href="#" class="btn"><span>أضف للسلة</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71SOpj+uErL._AC_UF1000,1000_QL80_.jpg');">
+                        <div class="product-overlay">
+                            <a href="#" class="btn"><span>اكتشف الآن</span></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>عطر عنبر الذهب</h3>
+                        <p>عطر رجالي قوي يمزج بين العنبر النادر والخشب العطري مع لمسة توابل.</p>
+                        <div class="product-price">
+                            <span class="price">720 ر.س</span>
+                            <a href="#" class="btn"><span>أضف للسلة</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <div class="container">
+            <div class="experience-content">
+                <h2>تجربة لا تُنسى</h2>
+                <p>عطر "روح الأصيل" ليس مجرد رائحة، بل هو رحلة حسيّة تنتقل بك إلى عالم من الفخامة والأناقة. كل زجاجة تحمل قصة، وكل رشّة تخلّد ذكرى.</p>
+                <a href="#" class="btn"><span>اكتشف القصة</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>آراء عملائنا</h2>
+                <p>انطباعات حقيقية من أشخاص جربوا عطر روح الأصيل</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"عطر روح الأصيل هو أفضل عطر اشتريته في حياتي. الرائحة تبقى طوال اليوم وتتغير مع الوقت بشكل رائع. أنصح به بشدة لكل من يبحث عن الفخامة والأصالة."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ن</div>
+                        <div class="author-info">
+                            <h4>نورة أحمد</h4>
+                            <p>عميلة منذ سنتين</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"الجودة لا تضاهى والتغليف رائع. كل ما أطلبه منهم يفوق توقعاتي. أصبح عطر روح الأصيل هويتي العطرية التي يميزني في كل مكان."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">خ</div>
+                        <div class="author-info">
+                            <h4>خالد السعدي</h4>
+                            <p>عميل منذ 3 سنوات</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"خدمة العملاء ممتازة والنصائح التي يقدمونها دقيقة ومناسبة لذوقي. أشكرهم على جودة المنتجات والخدمة الرائعة. أنصح الجميع بتجربة عطورهم."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ف</div>
+                        <div class="author-info">
+                            <h4>فاطمة العلي</h4>
+                            <p>عميلة منذ سنة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>انضم إلى قائمتنا البريدية</h2>
+            <p>كن أول من يعرف عن عروضنا الخاصة ومنتجاتنا الجديدة. احصل على خصم 15% على أول طلبية عند الاشتراك.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="بريدك الإلكتروني" required>
+                <button type="submit">اشترك الآن</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>روح الأصيل</h3>
+                    <p>متجر عطور فاخرة يجمع بين الأصالة والحداثة، ليقدم لكم أجمل الروائح وأكثرها تميزاً.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> منتجاتنا</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> مجموعات الهدايا</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> عروض خاصة</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>معلومات الاتصال</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> الرياض، المملكة العربية السعودية</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> الهاتف: 0112345678</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> البريد: info@rouh-alaseel.com</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> ساعات العمل: 9 ص - 11 م</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; عطر روح الأصيل 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.feature-card, .product-card, .testimonial-card');
+            
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if(position < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Initialize elements with initial styles for animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.feature-card, .product-card, .testimonial-card');
+            
+            elements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(30px)';
+                element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+        });
+    </script>
+</body>
+</html>
